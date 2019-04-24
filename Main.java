@@ -26,17 +26,24 @@ public class Main {
         myMap.put(9, "nine");
         myMap.put(10, "ten");
 
+        String answer = myMap.get(num);
 
-        while(myMap.get(num)==null)
-        {
+        while (answer == null) {
+            System.out.println("Do you want to add a value?");
+            String ans = input.nextLine();
             System.out.println("Adding Key: ");
             String so = input.nextLine();
-            myMap.put(num, so);
-        }
-        if (myMap.get(num)!=null){
-            System.out.println(myMap.get(num));
-        }
+            myMap.put(ans, so);
 
+
+                System.out.println("Enter number: ");
+                int addNum = input.nextInt();
+
+
+
+            }
+            }
+            System.out.println(myMap.get(num));
         /*System.out.println("writing keys and values to a file");
         String filename = (System.getProperty("user.dir") + File.separatorChar +"animalNoises.txt");
         System.out.println(filename);
@@ -53,6 +60,7 @@ public class Main {
             String line = scannerInput.nextLine();
             System.out.println(line);
         }*/
+        }
     }
-}
+
 
