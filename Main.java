@@ -29,7 +29,7 @@ public class Main {
         myMap.put(10, "ten");
 
         Boolean answer = myMap.containsKey(num);
-
+        String so ="";
         while (answer==false) {
             System.out.println("Do you want to add a value?");
             String ans = input.nextLine();
@@ -37,8 +37,8 @@ public class Main {
             if (ans.equalsIgnoreCase("N")) {
                 break;
             }else if (ans.equalsIgnoreCase("Y")){
-                System.out.println("Adding Key: ");
-                String so = input.nextLine();
+                System.out.println("Adding Value: ");
+                 so = input.nextLine();
                 myMap.put(num, so);
                 break;
             }
@@ -47,7 +47,7 @@ public class Main {
 
 
 
-        System.out.println(myMap.get(num));
+        System.out.println(num+" " + myMap.get(num));
     }
 }
 
